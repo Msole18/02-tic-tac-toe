@@ -1,4 +1,4 @@
-const Square = ({children, updateBoard, isSelected, index}) => {
+export const Square = ({ children, isSelected, updateBoard, index }) => {
     const className = `square ${isSelected ?  'is-selected' : ''}`
     
     const handleClick = () => {
@@ -10,6 +10,4 @@ const Square = ({children, updateBoard, isSelected, index}) => {
         {children}
     </div>
   )
-}
-
-export default Square
+};
